@@ -6,12 +6,14 @@ import { BookWish } from "./components/BookWish";
 
 function App() {
   return (
-    <div className="container">
-      <Header />,
-      <Bookstats />,
-      <BookList />,
-      <BookWish />
-    </div>
+      <Header />
+      <div className="container">
+        <Bookstats />
+        <BookList />
+        <BookWish />
+        
+      </div>
+    
   );
 }
 

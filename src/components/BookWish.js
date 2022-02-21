@@ -2,7 +2,7 @@ import React from "react";
 
 export const BookWish = () => {
   return (
-    <>
+    <div>
       <h3>Books WishList</h3>
       <ul className="list">
         <li>
@@ -10,6 +10,6 @@ export const BookWish = () => {
           <button class="delete-btn">x</button>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
