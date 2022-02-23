@@ -1,12 +1,18 @@
 import React from "react";
+import { BookstatsStyled } from "./styles/Bookstats.styled";
 
 export const Bookstats = () => {
   const currentyear = new Date().getFullYear();
   return (
-    <>
-      <h4>Reading Stats</h4>
-      <h1>{currentyear}</h1>
-      <h1>1/10 Books</h1>
-    </>
+    <BookstatsStyled>
+      <div>
+        <img src="./images/graph.svg" alt="" />
+      </div>
+
+      <div>
+        <h2>{currentyear} &nbsp; Stats</h2>
+        <p>U read 2 Books this year from target of 10</p>
+      </div>
+    </BookstatsStyled>
   );
 };
