@@ -3,11 +3,11 @@ import { Container } from "./components/styles/Container.styled";
 import { ThemeProvider } from "styled-components";
 import { Bookstats } from "./components/Bookstats";
 import { BookList } from "./components/BookList";
-//import { BookWish } from "./components/BookWish";
+import { BookTopSellers } from "./components/BookTopSellers";
 
 const theme = {
   colors: {
-    header: "#ebfbff",
+    header: "#fff",
     body: "#FFF",
     footer: "#528B8B",
   },
@@ -22,6 +22,7 @@ function App() {
         <Container>
           <Bookstats />
           <BookList />
+          <BookTopSellers />
         </Container>
       </>
     </ThemeProvider>
