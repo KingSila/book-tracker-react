@@ -8,7 +8,7 @@ export const BookTopSellers = () => {
       <ul className="list">
         <li>
           Book2 <span>-$400</span>
-          <button class="delete-btn">x</button>
+          <button className="delete-btn">x</button>
         </li>
       </ul>
     </BookTopSellersStyled>
