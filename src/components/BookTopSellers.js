@@ -1,4 +1,3 @@
-import { BookTopSellersStyled } from "./styles/BookTopSellers.styled";
 import React, { useEffect, useState } from "react";
 var axios = require("axios").default;
 
