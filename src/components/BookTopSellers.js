@@ -35,7 +35,7 @@ export const BookTopSellers = () => {
   }, []);
 
   return (
-    <BookTopSellersStyled>
+    <div>
       {topbooks.map((book) => (
         <ul>
           <h3>
@@ -43,11 +43,11 @@ export const BookTopSellers = () => {
             <li key={book.id}>{book.name}</li>
           </h3>
 
-          {book.preview.map((subitem) => (
-            <li>{subitem.title}</li>
+          {book.preview.map((img) => (
+            <img src={img.imageURL} alt="" />
           ))}
         </ul>
       ))}
-    </BookTopSellersStyled>
+    </div>
   );
 };
